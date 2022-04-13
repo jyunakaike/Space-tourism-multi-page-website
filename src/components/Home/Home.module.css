@@ -1,4 +1,4 @@
-.Home-background{
+.Home-background {
     width: 100vw;
     height: 100vh;
 
@@ -6,4 +6,79 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    display: flex;
+}
+
+.Home-container {
+    margin-top: 20%;
+    margin-bottom: 7%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+    /* background-color: gray; */
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    position: relative;
+}
+
+.Home-container-detail{
+    width: 45%;
+    height: 100%;
+    /* background-color: royalblue; */
+
+    display: flex;
+    flex-direction: column;
+}
+.Home-container-detail h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 33.6px;
+}
+
+.Home-container-detail h1{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 15rem;
+    line-height: 171.9px;
+}
+.Home-container-detail p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 32px;
+}
+
+.Home-container-button{
+    width: 274px;
+    height: 274px;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    cursor:pointer;
+}
+
+.Home-container-button:hover{
+    outline: 10rem solid rgba(255, 255, 255, 0.5) ;
+    transition: 1.5s;
+
+}
+
+
+.Home-container-button h2{
+    color: black;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 33.6px;
+
 }
