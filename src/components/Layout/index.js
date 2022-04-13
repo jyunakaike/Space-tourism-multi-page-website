@@ -17,10 +17,10 @@ export const Layout = ({ children }) => {
           height={50}
         />
         <div className={style["header-menu-container"]}>
-          <div className={style["header-menu"]}> <h2 className={style["header-menu-title"]}>00 HOME </h2> </div>
-          <div className={style["header-menu"]}> <h2>01 DESTINATION </h2></div>
-          <div className={style["header-menu"]}><h2>02 CREW </h2></div>
-          <div className={style["header-menu"]}> <h2>03 TECNOLOGY </h2></div>
+          <div className={style["header-menu"]}>  <h2>00 </h2> <p>HOME </p> </div>
+          <div className={style["header-menu"]}>  <h2 >01 </h2> <p>DESTINATION</p> </div>
+          <div className={style["header-menu"]}>  <h2>02 </h2> <p>CREW</p>  </div>
+          <div className={style["header-menu"]}>  <h2>03 </h2> <p>TECNOLOGY</p> </div>
         </div>
 
 

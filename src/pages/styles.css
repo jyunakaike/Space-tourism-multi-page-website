@@ -1,12 +1,50 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* html{
+
+html{
     font-size: 62.5%;
 }
 
-p{
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+p {
+    color: white;
     font-size: 1.6rem;
-} */
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+
+
+/* 
+barlow condensed,
+    400
+    700 bold
+
+
+barlow 
+    400
+
+bellefair
+    400
+
+font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif;
+
+*/
