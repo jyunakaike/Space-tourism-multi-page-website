@@ -2,7 +2,7 @@
 import React from 'react';
 import { Layout } from '../components/Layout'
 
-// import './styles.css';
+import './styles.css';
 
 function MyApp({ Component, pageProps }) {
     return (

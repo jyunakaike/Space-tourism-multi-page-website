@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import style from './Home.module.css';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className={style["Home-background"]}>
+
+      <div>Home</div>
+    </div>
   )
 }
 
