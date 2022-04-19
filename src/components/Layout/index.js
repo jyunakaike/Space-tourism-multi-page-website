@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 // images
 import Logo from '../../assets/shared/logo.svg'
 
@@ -17,10 +18,34 @@ export const Layout = ({ children }) => {
           height={50}
         />
         <div className={style["header-menu-container"]}>
-          <div className={style["header-menu"]}>  <h2>00 </h2> <p>HOME </p> </div>
-          <div className={style["header-menu"]}>  <h2>01 </h2> <p>DESTINATION</p> </div>
-          <div className={style["header-menu"]}>  <h2>02 </h2> <p>CREW</p>  </div>
-          <div className={style["header-menu"]}>  <h2>03 </h2> <p>TECNOLOGY</p> </div>
+          <Link href={"/"}>
+            <div className={style["header-menu"]}>
+              <h2>00 </h2>
+              <p>HOME </p>
+            </div>
+          </Link>
+
+          <Link href={"/destination"}>
+            <div className={style["header-menu"]}>
+              <h2>01 </h2>
+              <p>DESTINATION</p>
+            </div>
+          </Link>
+
+          <Link href={"/crew"}>
+            <div className={style["header-menu"]}>  
+              <h2>02 </h2>
+              <p>CREW</p>  
+            </div>
+          </Link>
+
+          <Link href={"/tecnology"}>
+            <div className={style["header-menu"]}>  
+              <h2>03 </h2> 
+              <p>TECNOLOGY</p>
+            </div>
+          </Link>
+
         </div>
 
 

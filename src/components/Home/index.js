@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 import style from './Home.module.css';
 
 const Home = () => {
@@ -15,9 +17,12 @@ const Home = () => {
             and relax because we’ll give you a truly out of this world experience!
           </p>
         </div>
-        <div className={style["Home-container-button"]}>
-          <h2>EXPLORE</h2>
-        </div>
+
+        <Link href={"/destination"}>
+          <div className={style["Home-container-button"]}>
+            <h2>EXPLORE</h2>
+          </div>
+        </Link>
       </div>
     </div>
   )

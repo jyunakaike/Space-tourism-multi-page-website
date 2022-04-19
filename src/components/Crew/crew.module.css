@@ -1,0 +1,104 @@
+.crew-container{
+    width: 100vw;
+    height:auto;
+    min-height: 100vh;
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+}
+.crew-wrapper{
+    margin: 20% 20% 0 20%;
+    /* background-color: red ; */
+    width: 30%;
+    height: auto;
+}
+
+.crew-title{
+    display:flex;
+    margin: 0% 0% 15% 0%;
+}
+.crew-title h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.36rem;
+    opacity: 0.25;
+    margin-right: 2.4rem;
+    letter-spacing: 0.4rem;
+}
+
+.crew-title h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 3.36rem;
+    letter-spacing: 0.4rem;
+}
+
+.crew-detail{
+    margin: 0% 0% 10% 0%;
+}
+
+.crew-detail h3{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height:3.6rem;
+    color: white;
+    opacity: 0.5;
+}
+.crew-detail h1{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 5.6rem;
+    line-height: 6.418rem;
+    
+}
+
+.crew-detail p{
+    line-height: 3.2rem;
+    color: #D0D6F9;
+    /* margin-bottom: 20%; */
+}
+.crew-buttons{
+    position:absolute;
+
+    /* background-color: red; */
+    /* width: 50%; */
+    bottom: 10%;
+    width: 15%;
+    height: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.crew-buttons-span{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    opacity: 0.17;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+    /* color:red; */
+    cursor: pointer;
+}
+.crew-buttons-span:hover{
+    opacity: 0.5;
+
+}
+
+.crew-image{
+    /* background-color: red; */
+    position:absolute;
+    right: 7%;
+    bottom: 0;
+}
+
+
+
+
