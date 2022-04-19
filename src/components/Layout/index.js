@@ -39,10 +39,10 @@ export const Layout = ({ children }) => {
             </div>
           </Link>
 
-          <Link href={"/tecnology"}>
+          <Link href={"/technology"}>
             <div className={style["header-menu"]}>  
               <h2>03 </h2> 
-              <p>TECNOLOGY</p>
+              <p>TECHNOLOGY</p>
             </div>
           </Link>
 
