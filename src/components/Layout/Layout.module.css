@@ -1,57 +1,71 @@
 .header{
     position: absolute;
     /* background-color: red; */
+    padding: 0 0 0 5%;
     margin-top: 2%;
-    padding:0 5%;
     width: 100%;
     height: 10%;
     display: flex;
         justify-content: space-between;
         align-items: center;
-    
+}
+.header hr{
+    width:20%;
+    opacity: 0.25;
 }
 
-.header-menu-container{
-    width: 50%;
-    height: 100%;
 
-    background: rgba(255, 255, 255, 0.4);
+.header-menu-container{
+    width: 60%;
+    height: 100%;
+    padding: 0 5% 0 0 ;
+    background:rgba(255, 255, 255, 0.04);
+    /* background:red; */
    
     display: flex;
         justify-content:space-between;
         align-items: center;
-
-        
 }
 
 .header-menu{
     height: 100%;
-    /* background-color: blueviolet; */
     padding-right: 4%;
     display: flex;
         justify-content: center;
         align-items: center;
     cursor: pointer;
-    /* text-align: center; */
     border: 5px solid transparent ;
-
 }
+.header-menu-active{
+    height: 100%;
+    padding-right: 4%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    cursor: pointer;
+    border-bottom: 5px solid #FFFFFF ;
+}
+
 .header-menu:hover{
-    border-bottom: 5px solid white ;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5) ;
 }
 
-
+.header-menu-active h2,
 .header-menu h2{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
-    /* size: 1.6rem; */
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.27rem;
     margin-right: 2rem ;
 }
+.header-menu-active p,
 .header-menu p{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     line-height: 1.92rem;
     font-size: 1.6rem;
+    letter-spacing: 0.27rem;
     color: #FFFFFF;
 }
 

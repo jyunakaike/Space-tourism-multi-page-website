@@ -30,10 +30,6 @@ export const Technology = ({ technologyList }) => {
             setError(error)
         }
     }
-
-
-    console.log(technology)
-
     return (
         <section className={styles['technology-container']}>
             <div className={styles['technology-wrapper']}>
@@ -71,7 +67,7 @@ export const Technology = ({ technologyList }) => {
                 (Loading == false)
                     ?
                     <div className={styles['technology-article-image']}>
-                        <Image src={technology.images.portrait} width={510} height={520} className={styles['technology-article-image']} alt={`${technology.name}-image`} />
+                        <Image src={technology.images.portrait} width={1500} height={1500} alt={`${technology.name}-image`} />
                     </div>
 
                     :

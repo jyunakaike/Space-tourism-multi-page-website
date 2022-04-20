@@ -12,7 +12,7 @@
 
 .destination-container {
     /* background-color: gray; */
-    margin-top: 20%;
+    margin-top: 15%;
     margin-left: 10%;
     margin-right: 10%;
     /* margin-bottom: 10%; */
@@ -38,17 +38,19 @@
     margin-right: 4%;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
-    font-size: 2.8;
+    font-size: 2.8rem;
     line-height: 3.4rem;
+    letter-spacing: 0.472rem;
     opacity: 0.25;
 
 }
 
 .destination-image div h2 {
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    font-size: 2.8;
+    font-size: 2.8rem;
     line-height: 3.4rem;
+    letter-spacing: 0.47rem;
 }
 
 .destination-image-size {

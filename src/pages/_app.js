@@ -1,10 +1,13 @@
-// const { Component } = require("react/cjs/react.production.min");
-import React from 'react';
+import React, {useState} from 'react';
 import { Layout } from '../components/Layout'
 
 import './styles.css';
 
 function MyApp({ Component, pageProps }) {
+    // const [nav, setNav] = useState();
+
+
+
     return (
         <React.Fragment>
             <Layout>

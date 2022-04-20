@@ -20,17 +20,18 @@ export const Crew = ({ crewList }) => {
         }
     }, [])
 
-    const handleSpanButton = (item)=> {
+    const handleSpanButton = (item) => {
         setLoading(true)
         try {
             setCrew(crewList[item])
             setLoading(false)
-
         } catch (error) {
             setError(error)
             setLoading(false)
         }
     }
+
+    // console.log(crew.name)
 
     return (
         <section className={styles['crew-container']}>
@@ -48,12 +49,19 @@ export const Crew = ({ crewList }) => {
                         </div>
                         : <div>loading... </div>
                 }
-                <div className={styles['crew-buttons']} >
-                    <span onClick={()=>handleSpanButton(0)} className={styles['crew-buttons-span']} /> 
-                    <span onClick={()=>handleSpanButton(1)} className={styles['crew-buttons-span']} /> 
-                    <span onClick={()=>handleSpanButton(2)} className={styles['crew-buttons-span']}  />
-                    <span onClick={()=>handleSpanButton(3)} className={styles['crew-buttons-span']} />
-                </div>
+
+                {
+                    (loading != true)?
+                    <div className={styles['crew-buttons']} >
+                        <span onClick={() => handleSpanButton(0)} className={(crew.name === "Douglas Hurley") ? styles['crew-buttons-span-active'] : styles['crew-buttons-span']} />
+                        <span onClick={() => handleSpanButton(1)} className={(crew.name === "Mark Shuttleworth") ? styles['crew-buttons-span-active'] : styles['crew-buttons-span']} />
+                        <span onClick={() => handleSpanButton(2)} className={(crew.name === "Victor Glover") ? styles['crew-buttons-span-active'] : styles['crew-buttons-span']} />
+                        <span onClick={() => handleSpanButton(3)} className={(crew.name === "Anousheh Ansari") ? styles['crew-buttons-span-active'] : styles['crew-buttons-span']} />
+                    </div>
+                    :
+                    <div>Loading...</div>
+                }
+
             </div>
             <div className={styles['crew-image']} >
                 {

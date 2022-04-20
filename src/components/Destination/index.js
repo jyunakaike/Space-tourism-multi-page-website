@@ -10,14 +10,10 @@ const destination = ({ destinationNames }) => {
   useEffect(() => {
     setDestinationList(destinationNames);
     setDestinationItem(destinationNames[0])
-    console.log(destinationItem.name)
-
-
   }, []);
 
 
   const  handleTitle = (item) => {
-    console.log(item)
     setDestinationItem(destinationNames[item])
   }
 
