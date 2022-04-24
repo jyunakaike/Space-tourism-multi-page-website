@@ -5,8 +5,7 @@ import style from './Home.module.css';
 
 const Home = () => {
   return (
-    <div className={style["Home-background"]}>
-
+    <section className={style["Home-background"]}>
       <div className={style["Home-container"]}>
         <div className={style["Home-container-detail"]}>
           <h3>SO, YOU WANT TO TRAVEL TO</h3>
@@ -24,7 +23,7 @@ const Home = () => {
           </div>
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 
