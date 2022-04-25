@@ -26,10 +26,12 @@ const destination = ({ destinationNames }) => {
             <h3>01</h3> <h2> PICK YOUR DESTINATION </h2>
           </div>
           <div className={styles["destination-image-size"]}>
+            
             {
               (destinationItem)
                 ?
-                <Image src={destinationItem.images.png} width={400} height={400} alt={destinationItem.name} />
+                <Image src={destinationItem.images.png} width={300} height={300} alt={destinationItem.name} />
+                // <Image src={destinationItem.images.png} alt={destinationItem.name} layout={'fill'} objectFit={'contain'} />
                 : loading
             }
           </div>
