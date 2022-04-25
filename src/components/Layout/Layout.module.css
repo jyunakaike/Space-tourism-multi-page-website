@@ -90,3 +90,10 @@
             align-items: center;
     }
 }
+
+@media (max-width: 621px) {
+    .header-menu-container{
+        display: none;
+    }
+}
+

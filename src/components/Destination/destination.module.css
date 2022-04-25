@@ -264,3 +264,19 @@
     }
 
 }
+@media (max-width: 621px) {
+    .destination-nameList-detail{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .destination-image-title {
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .destination-nameList-detail div{
+        margin: 3.2rem;
+    }
+
+}
