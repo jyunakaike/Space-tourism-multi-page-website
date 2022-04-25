@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 
 import styles from './technology.module.css';
@@ -8,16 +8,29 @@ export const Technology = ({ technologyList }) => {
     const [Loading, setLoading] = useState()
     const [error, setError] = useState(false)
 
+    const [windowSize, setWindowSize] = useState();
+
     useEffect(() => {
         setLoading(true)
         try {
             setTechnology(technologyList[0]);
             setLoading(false)
+            if (typeof window !== 'undefined') {
+                function handleResize() {
+                    setWindowSize(
+                        window.innerWidth
+                    );
+                }
+                window.addEventListener("resize", handleResize);
+                handleResize();
+                return () => window.removeEventListener("resize", handleResize);
+            }
         } catch (error) {
             setLoading(false)
             setError(error)
         }
     }, [])
+
     const handleButtonNumber = (item) => {
         setLoading(true)
         try {
@@ -28,6 +41,7 @@ export const Technology = ({ technologyList }) => {
             setError(error)
         }
     }
+
     return (
         <section className={styles['technology-container']}>
             <div className={styles['technology-wrapper']}>
@@ -54,8 +68,13 @@ export const Technology = ({ technologyList }) => {
                                 </div>
                             </article>
                             <div className={styles['technology-article-image']}>
-                                {/* <Image src={technology.images.portrait} width='100%' height='100%' layout="responsive" objectFit="contain" alt={`${technology.name}-image`} /> */}
-                                <Image src={technology.images.landscape} width='99%' height='40%' layout="responsive" objectFit="contain" alt={`${technology.name}-image`} />
+                                {
+                                    (windowSize < 820)
+                                        ?
+                                        <Image src={technology.images.landscape} width='99%' height='40%' layout="responsive" objectFit="contain" alt={`${technology.name}-image`} />
+                                        :
+                                        <Image src={technology.images.portrait} width='100%' height='100%' layout="responsive" objectFit="contain" alt={`${technology.name}-image`} />
+                                }
                             </div>
                         </div>
                         :
