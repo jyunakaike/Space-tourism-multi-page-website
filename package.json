@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"next",
-    "start":"next start",
+    "dev": "next",
+    "start": "next start",
     "build": "next build"
   },
   "repository": {
@@ -23,6 +23,7 @@
   "dependencies": {
     "next": "^12.1.5",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.3.1"
   }
 }

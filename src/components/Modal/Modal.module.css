@@ -1,17 +1,18 @@
 .Modal {
     position: fixed;
     right: 0;
-    width: 70%;
+    width: 60%;
     height: 100vh;
-    background-color: black;
-    /* background-color: rgba(255, 255, 255, 0.04); */
+    /* background-color: black; */
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
     z-index: 2;
     display: flex;
     flex-direction: column;
 }
 
 .Modal-header {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     height: 10%;
     display: flex;
     justify-content: flex-end;
@@ -20,7 +21,7 @@
 
 .cross {
     color: blue;
-    background-color: red;
+    /* background-color: red; */
     width: 25%;
     height: 100%;
 }

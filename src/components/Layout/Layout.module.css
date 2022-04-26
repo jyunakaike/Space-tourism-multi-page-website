@@ -13,10 +13,6 @@
     width:20%;
     opacity: 0.25;
 }
-.header img{
-
-
-}
 
 .header-menu-container{
     width: 65%;
@@ -72,6 +68,11 @@
 }
 
 
+.header-menu-icon{
+    display:none
+}
+
+
 @media (max-width: 1000px) {
     .header hr{
     display: none;
@@ -94,6 +95,15 @@
 @media (max-width: 621px) {
     .header-menu-container{
         display: none;
+    }
+
+    .header-menu-icon{
+        display:grid;
+        place-items: center;
+        color: white;
+        width: 10%;
+        height: 100%;
+        color: #D0D6F9;
     }
 }
 

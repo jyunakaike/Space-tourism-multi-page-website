@@ -1,18 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 
 import { AiOutlineClose } from 'react-icons/ai';
 
 import styles from './Modal.module.css';
 
-const Modal = ({ children, setHandleModal, handleModal }) => {
+const Modal = ({  setOpenModal, openModal }) => {
     const handleCloseMenu = () => {
-        setHandleModal(!handleModal)
+        setOpenModal(!openModal)
     }
-
-    let router = useRouter();
-
     return (
         <React.Fragment>
             <div className={styles.Modal}>
@@ -20,15 +16,15 @@ const Modal = ({ children, setHandleModal, handleModal }) => {
                     <AiOutlineClose className={styles.cross} onClick={() => handleCloseMenu()} />
                 </div>
 
-                <div className={styles['Modal-List']}>
-                    <Link href={"/"} >
+                <div  onClick={() => handleCloseMenu()} className={styles['Modal-List']}>
+                    <Link href={"/"}  >
                         <div className={styles['Modal-List-detail']}>
                             <h2>00 </h2>
                             <p>HOME </p>
                         </div>
                     </Link>
 
-                    <Link href={"/destination"}>
+                    <Link href={"/destination"} >
                         <div className={styles['Modal-List-detail']}>
                             <h2>01 </h2>
                             <p>DESTINATION</p>
@@ -48,16 +44,8 @@ const Modal = ({ children, setHandleModal, handleModal }) => {
                             <p>TECHNOLOGY</p>
                         </div>
                     </Link>
-
                 </div>
-
-
-
-
-
-
             </div>
-            {children}
         </React.Fragment>
     )
 }
