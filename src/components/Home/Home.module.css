@@ -1,5 +1,6 @@
 .Home-background {
-    width: 100vw;
+    width: auto;
+    min-height: 100vw;
     height: auto;
     min-height: 100vh;
     background-image: url("../../assets/home/background-home-desktop.jpg");
@@ -114,16 +115,15 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-
         margin-bottom: 15%;
     }
 
     .Home-container-detail h3 {
         margin: 0 auto;
+
         font-size: 2rem;
         line-height: 2.4rem;
         letter-spacing: 0.4725rem;
-        
         color: #D0D6F9;
     }
 
@@ -153,5 +153,61 @@
         align-items: center;
         cursor: pointer;
 
+    }
+}
+@media (max-width:620px) {
+    .Home-container {
+        margin-top: 20%;
+        margin-bottom: 7%;
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+    }
+    .Home-container-detail {
+        width: 100%;
+        height: auto;
+        /* background-color: royalblue; */
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+
+    .Home-container-detail h3 {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.27rem;
+        color: #D0D6F9;
+    }
+
+    .Home-container-detail h1 {
+        font-size: 8rem;
+        line-height: 10rem;
+    }
+    .Home-container-detail p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #D0D6F9;
+    }
+    .Home-container-button {
+        width: 15rem;
+        height: 15rem;
+
+        background-color: white;
+        border-radius: 50%;
+    
+        position:initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .Home-container-button h2 {
+        font-size: 2rem;
+        line-height: 2.36rem;
     }
 }

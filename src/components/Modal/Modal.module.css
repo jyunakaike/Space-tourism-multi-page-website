@@ -1,0 +1,56 @@
+.Modal {
+    position: fixed;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: black;
+    /* background-color: rgba(255, 255, 255, 0.04); */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.Modal-header {
+    background-color: rebeccapurple;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.cross {
+    color: blue;
+    background-color: red;
+    width: 25%;
+    height: 100%;
+}
+
+.Modal-List {
+    /* background-color: green; */
+    height: 60%;
+    padding: 5%;
+}
+.Modal-List-detail{
+    display: flex;
+    margin-bottom: 1rem;
+    /* background-color: green; */
+}
+
+.Modal-List-detail h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.27rem;
+    margin-right: 2rem;
+    width: 10%;
+}
+
+.Modal-List-detail p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    line-height: 1.92rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+    color: #FFFFFF;
+}

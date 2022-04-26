@@ -169,6 +169,11 @@
 
     .technology-title {
         display: flex;
+        margin: 0 auto ;
+    }
+
+    .technology-title {
+        display: flex;
         margin-bottom: 5rem;
         margin-left: 5%;
     }
@@ -248,5 +253,69 @@
         padding-right: 0%;
     
     }
+}
+
+@media (max-width: 621px) {
+    .technology-wrapper {
+        margin: 25% auto 0 auto;
+        width: 100%;
+        height: 60%;
+        /* background-color: red; */
+    }
+    .technology-title {
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .technology-title h3 {
+        font-size: 1.6rem;
+        line-height: 1.92rem;
+        letter-spacing: 0.27rem;
+        color: white;
+        opacity: 0.25;
+        margin-right: 2.4rem;
+    }
+    .technology-title h2 {
+        font-size: 1.6rem;
+        line-height: 1.92rem;
+        letter-spacing: 0.27rem;
+    }
+
+    .technology-article-numbers {
+        width: 60%;
+        height: 5.8rem;
+
+        /* background-color: blue; */
+        margin: 5% auto 5% auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .technology-article-detail h3 {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 0.27rem;
+        color: #D0D6F9;
+        margin-bottom: 1.8rem;
+    }
+
+    .technology-article-detail h1 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    
+    .technology-article-detail p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: #D0D6F9;
+    }
 
 }
+

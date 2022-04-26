@@ -30,8 +30,7 @@ const destination = ({ destinationNames }) => {
             {
               (destinationItem)
                 ?
-                <Image src={destinationItem.images.png} width={300} height={300} alt={destinationItem.name} />
-                // <Image src={destinationItem.images.png} alt={destinationItem.name} layout={'fill'} objectFit={'contain'} />
+                <Image src={destinationItem.images.png} layout="responsive" objectFit="contain"  width={300} height={300} alt={destinationItem.name} />
                 : loading
             }
           </div>
@@ -53,8 +52,6 @@ const destination = ({ destinationNames }) => {
           </p>
 
           <hr />
-
-
           <div className={styles["destination-nameList-detail"]}>
             <div>
               <h3>AVG. DISTANCE</h3>

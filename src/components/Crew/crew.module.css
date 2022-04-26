@@ -124,7 +124,7 @@
     bottom: 0%;
     right: 0%;
     width: 40%;
-    display:grid;
+    display: grid;
 }
 
 
@@ -157,7 +157,7 @@
         text-align: center;
         /* margin: 0% 5% 5% 5%; */
         margin: 0% auto 5% auto;
-        width:75%;
+        width: 75%;
         /* background-color: blue; */
     }
 
@@ -193,6 +193,26 @@
         justify-content: center;
     }
 
+    .crew-wrapper {
+        margin: 25% auto 5% auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .crew-title h3 {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        opacity: 0.25;
+        margin-right: 2.4rem;
+        letter-spacing: 0.27rem;
+    }
+
+    .crew-title h2 {
+        font-size: 1.6rem;
+        line-height: 1.92rem;
+        letter-spacing: 0.27rem;
+    }
+
     .crew-detail-wrapper {
         display: flex;
         flex-direction: column-reverse;
@@ -201,9 +221,10 @@
 
     .crew-image-mobile {
         /* background-color: red; */
-        width: 50%;
+        width: 70%;
         position: static;
-        margin-bottom: 3rem;
+        margin: 1.5rem auto;
+        /* margin-bottom: 3rem; */
     }
 
     .crew-buttons {
@@ -211,9 +232,26 @@
     }
 
     /* h1, p */
-    .crew-detail h1,
-    .crew-detail p,
+    /* .crew-detail h1, */
+    /* .crew-detail p, */
     .crew-detail h3 {
+        font-size: 1.6rem;
+        line-height: 1.834rem;
+        color: white;
+        opacity: 0.5;
         margin-bottom: 3rem;
     }
+    .crew-detail h1{
+        font-size: 2.4rem;
+        line-height: 2.75rem;
+        color: white;
+        margin-bottom: 3rem;
+    }
+    .crew-detail p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: white;
+        margin-bottom: 3rem;
+    }
+    
 }

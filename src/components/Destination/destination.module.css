@@ -27,6 +27,7 @@
     height: 90%;
     display: flex;
     flex-direction: column;
+    margin-right:5%;
 }
 
 .destination-image-title {
@@ -34,7 +35,7 @@
     display: flex;
 }
 
-.destination-image div h3 {
+.destination-image-title h3 {
     margin-right: 4%;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
@@ -42,10 +43,9 @@
     line-height: 3.4rem;
     letter-spacing: 0.472rem;
     opacity: 0.25;
-
 }
 
-.destination-image div h2 {
+.destination-image-title h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 2.8rem;
@@ -54,8 +54,9 @@
 }
 
 .destination-image-size {
-    margin-left: 5%;
     /* background-color: red; */
+    width: 35.5rem;
+    height: 35.5rem;
 
 }
 
@@ -193,12 +194,7 @@
     }
 
     .destination-container {
-        /* background-color: gray; */
         margin: 20% 5% 5% 5%; 
-        /* margin-top: 20%;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%; */
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -265,6 +261,13 @@
 
 }
 @media (max-width: 621px) {
+    .destination-container {
+        margin: 25% 5% 5% 5%; 
+        width: 100%;
+        /* height: 100%; */
+        display: flex;
+    }
+
     .destination-nameList-detail{
         flex-direction: column;
         justify-content: flex-start;
@@ -275,8 +278,71 @@
         display: flex;
         justify-content: center;
     }
+    .destination-image-title h3 {
+        display: none;
+    }
+
+    .destination-image-title h2 {
+        font-size: 1.6rem;
+        line-height: 1.92rem;
+        letter-spacing: 0.27rem;
+    }
+    .destination-image-size {
+        margin:0 auto;
+        width: 17rem;
+        height: 15rem;
+    
+    }
+    .destination-nameList-active,
+    .destination-nameList-noactive
+    {
+        margin-right: 1rem;
+
+    }
+    .destination-nameList-active h3 {
+        font-size: 1.4rem;
+        line-height: 1.68rem;
+        /* background-color: yellow; */
+        color: #FFFFFF;
+    }
+    .destination-nameList-noactive h3 {
+        font-size: 1.4rem;
+        line-height: 1.68rem;
+        /* background-color: yellow; */
+        color: #D0D6F9;
+    }
+    
+    .destination-detail h1 {
+        font-weight: 400;
+        font-size: 5.6rem;
+    }
+
+    .destination-detail p {
+        font-size: 1.5rem;
+        margin-bottom: 5%;
+        line-height: 3.2rem;
+        color: #D0D6F9;
+    }
+
     .destination-nameList-detail div{
+        width: 100%;
         margin: 3.2rem;
     }
+
+    .destination-nameList-detail div h3 {
+        font-size: 1.4rem;
+        line-height: 1.68rem;
+        margin-bottom: 2%;
+        color: #D0D6F9;
+    }
+    
+    .destination-nameList-detail div h2 {
+        font-family: 'Bellefair', serif;
+        font-weight: 400;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
+
+
 
 }
